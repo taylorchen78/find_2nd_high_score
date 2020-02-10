@@ -30,12 +30,7 @@ print(x) # 印出 [5, 4, 3, 2, 1]
 
 
 def second_highest(students):
-	name = []
-	score = []
-	for i in range(len(students)):
-		#name.append(students[i][0])
-		score.append(students[i][1])
-
+	score = [s[1] for s in students]
 	score = sorted(score, reverse=True)
 
 	for i in range(len(students)):
